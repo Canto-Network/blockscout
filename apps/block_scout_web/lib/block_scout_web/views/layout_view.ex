@@ -9,27 +9,13 @@ defmodule BlockScoutWeb.LayoutView do
 
   @default_other_networks [
     %{
-      title: "POA",
-      url: "https://blockscout.com/poa/core"
+      title: "Canto ",
+      url: "https://evm.explorer.canto.io"
     },
     %{
-      title: "Sokol",
-      url: "https://blockscout.com/poa/sokol",
+      title: "Canto ",
+      url: "https://evm.explorer.canto-testnet.com",
       test_net?: true
-    },
-    %{
-      title: "Gnosis Chain",
-      url: "https://blockscout.com/xdai/mainnet"
-    },
-    %{
-      title: "Ethereum Classic",
-      url: "https://blockscout.com/etc/mainnet",
-      other?: true
-    },
-    %{
-      title: "RSK",
-      url: "https://blockscout.com/rsk/mainnet",
-      other?: true
     }
   ]
 
@@ -48,11 +34,11 @@ defmodule BlockScoutWeb.LayoutView do
   end
 
   def subnetwork_title do
-    Keyword.get(application_config(), :subnetwork) || "Sokol"
+    Keyword.get(application_config(), :subnetwork) || "Canto"
   end
 
   def network_title do
-    Keyword.get(application_config(), :network) || "POA"
+    Keyword.get(application_config(), :network) || " "
   end
 
   defp application_config do
