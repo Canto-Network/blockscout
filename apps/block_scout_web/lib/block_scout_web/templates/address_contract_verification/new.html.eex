@@ -78,7 +78,15 @@
           <%= link(
             gettext("Next"),
             to: address_verify_contract_via_standard_json_input_path(@conn, :new, @address_hash),
-            id: "verify_via_standard_json_input",
+            id: "verify_via_standard_json_input_button",
+            class: "btn-full-primary mr-2",
+            style: "display: none;",
+            "data-button-loading": "animation"
+          ) %>
+          <%= link(
+            gettext("Next"),
+            to: address_verify_contract_via_multi_part_files_path(@conn, :new, @address_hash),
+            id: "verify_via_multi_part_files_button",
             class: "btn-full-primary mr-2",
             style: "display: none;",
             "data-button-loading": "animation"
