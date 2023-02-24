@@ -10,11 +10,11 @@ defmodule BlockScoutWeb.LayoutView do
   @default_other_networks [
     %{
       title: "Canto ",
-      url: "https://evm.explorer.canto.io"
+      url: "https://tuber.build/"
     },
     %{
       title: "Canto ",
-      url: "https://testnet-explorer.canto.neobase.one/",
+      url: "https://testnet.tuber.build/",
       test_net?: true
     }
   ]
